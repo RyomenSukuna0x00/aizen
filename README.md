@@ -1,4 +1,4 @@
-# Aizen - Lazy Bug Bounty Setup Script
+# Aizen - Tool For lazy Bug Bounty Hunters
 
 **Aizen** is a setup script tailored for bug bounty hunters who prefer an automated approach to installing essential reconnaissance and scanning tools. This script checks if the required tools are installed, installs any missing ones, and moves them to `/usr/local/bin` for convenient access. Designed for lazy hunters who want to start their hunt with minimal setup.
 
