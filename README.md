@@ -29,3 +29,20 @@ Run the following commands in your terminal to make the script executable and st
 cd aizen
 chmod +x installer.sh
 ./installer.sh
+
+## Usage
+
+Once Aizen installs all required tools, use the main scanning script with the following syntax:
+
+```bash
+aizen -t <target_domain> [-n] [-s] [-d] [-j]
+
+## Flags
+
+* -t <target_domain>: Specify the target domain (required).
+* -n: Run Nuclei scans for URLs.
+* -s: Run Nuclei scans for subdomains.
+* -d: Perform a DAST scan.
+* -j: Run JavaScript file analysis.
+
+
