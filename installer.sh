@@ -63,6 +63,9 @@ for tool in "${tools[@]}"; do
         fi
     fi
 done
+sudo chmod +x aizen/autofinder.sh
 sudo cp aizen/autofinder.sh /usr/bin/autofinder
+sudo chmod +x aizen/aizen.sh
+sudo cp aizen/aizen.sh /usr/bin/aizen
 
 echo -e "${CYAN}All required tools are checked.${RESET}"
