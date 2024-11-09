@@ -14,7 +14,7 @@ install_tool() {
     echo -e "${CYAN}Installing $tool...${RESET}"
     case $tool in
         subfinder|httpx|naabu|nuclei)
-            go install -v github.com/projectdiscovery/${tool}/cmd/${tool}@latest ;;
+            go install -v github.com/projectdiscovery/${tool}/v2/cmd/${tool}@latest ;;
         anew)
             go install -v github.com/tomnomnom/anew@latest ;;
         subzy)
