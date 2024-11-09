@@ -18,7 +18,7 @@ install_tool() {
         anew)
             go install -v github.com/tomnomnom/anew@latest ;;
         subzy)
-            go install -v github.com/LukaSikic/subzy@latest ;;
+            go install -v github.com/PentestPad/subzy@latest ;;
         katana)
             go install -v github.com/projectdiscovery/katana/cmd/katana@latest ;;
         gau)
