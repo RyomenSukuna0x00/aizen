@@ -89,14 +89,14 @@ if [ "${RUN_NUCLEI_SUBDOMAINS}" = true ]; then
 fi
 
 # URL collection
-source $HOME/venv/bin/activate
+source $HOME/venv/bin/activate >> /dev/null
 mkdir -p urls
 
 echo -e "${VIOLET}Running Katana...${RESET}"
 echo "${TARGET_DOMAIN}" | katana -silent -d 5 -ps -pss waybackarchive,commoncrawl,alienvault > urls/katana.txt
 
 echo -e "${VIOLET}Running GAU...${RESET}"
-echo "${TARGET_DOMAIN}" | gau --subs --blacklist ttf,woff,svg,png --providers wayback,commoncrawl,otx,urlscan > urls/gau.txt
+echo "${TARGET_DOMAIN}" | gau --subs --providers wayback,commoncrawl,otx,urlscan > urls/gau.txt
 
 echo -e "${VIOLET}Running Waybackurls...${RESET}"
 waybackurls "${TARGET_DOMAIN}" > urls/waybackurls.txt
